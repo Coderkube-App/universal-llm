@@ -1,0 +1,49 @@
+{
+  "name": "universal-llm",
+  "version": "1.0.0",
+  "description": "Zero-dependency, edge-ready LLM orchestrator for OpenAI, Anthropic, Grok, and Ollama with Zod-powered structured output, streaming, caching, and retries.",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm --dts --minify --clean",
+    "test": "vitest run",
+    "dev": "tsup src/index.ts --format cjs,esm --watch --dts"
+  },
+  "keywords": [
+    "llm",
+    "ai",
+    "openai",
+    "anthropic",
+    "grok",
+    "ollama",
+    "zod",
+    "structured-output",
+    "edge",
+    "streaming",
+    "serverless",
+    "vercel",
+    "cloudflare-workers"
+  ],
+  "author": "Antigravity",
+  "license": "MIT",
+  "devDependencies": {
+    "tsup": "^8.0.2",
+    "typescript": "^5.3.3",
+    "vitest": "^1.2.2",
+    "@types/node": "^20.11.16"
+  },
+  "peerDependencies": {
+    "zod": ">=3.0.0"
+  }
+}
