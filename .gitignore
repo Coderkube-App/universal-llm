@@ -181,7 +181,7 @@ coverage/
 
 # Demos
 demos/
-
+public/
 # Demos (ignore all except TestKeyboardBare)
 demos/*
 !demos/TestKeyboardBare/
