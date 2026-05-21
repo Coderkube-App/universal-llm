@@ -66,8 +66,6 @@ web_modules/
 .yarn-integrity
 
 # dotenv environment variable files
-.env
-.env.*
 !.env.example
 
 # parcel-bundler cache (https://parceljs.org/)
@@ -123,7 +121,6 @@ dist
 .tern-port
 
 # Stores VSCode versions used for testing VSCode extensions
-.vscode-test
 
 # pnpm
 .pnpm-store
@@ -160,8 +157,6 @@ Thumbs.db
 *.swo
 
 # Environment
-.env
-.env.local
 .env.*.local
 
 # Logs
@@ -185,3 +180,8 @@ public/
 # Demos (ignore all except TestKeyboardBare)
 demos/*
 !demos/TestKeyboardBare/
+branch_structure.json
+temp_auto_push.bat
+temp_interactive_push.bat
+.gitignore
+config.bat
